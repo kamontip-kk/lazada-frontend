@@ -32,17 +32,17 @@ function Header() {
             </div>
             <div className={`mainheader`}>
                 <span className={`mainheader-item logo`}>
-                    <img src={`/images/lazada.png`} alt={``} width={127} height={35} />
+                    <img src={`/images/lazada.png`} alt={``}/>
                 </span>
                 <span className={`mainheader-item`}>
                     <input type={`text`} placeholder="Search in Lazada"/>
                     <button><SearchOutlined /></button>
                     <span className={`cart`}>
-                        <ShoppingCartOutlined />
+                        <ShoppingCartOutlined/>
                     </span>
                 </span>
                 <span className={`mainheader-item gift`}>
-                    <img src={``} alt={`New User Free Gift`} width={188} height={45} />
+                    <img src={``} alt={`New User Free Gift`} />
                 </span>
             </div>
         </div>

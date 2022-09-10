@@ -9,7 +9,7 @@ function FlashSale() {
         cards.push(
             <div className={`foryou-card shadowonhover`}>
                 <div className={`foryou-img`}>
-                    <img src={`/images/aseprite.png`} alt={``} width={189} height={189} />
+                    <img src={`/images/aseprite.png`} alt={``} />
                 </div>
                 <div className={`foryou-description`}>
                     <div className={`name`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, beatae. Repellendus velit illo, placeat saepe ad debitis soluta, vero provident facere culpa nostrum itaque tempora iure harum officia molestiae! Blanditiis.</div>
