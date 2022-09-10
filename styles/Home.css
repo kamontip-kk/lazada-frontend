@@ -1,0 +1,596 @@
+@import 'antd/dist/antd.css';
+
+.container {
+  background-color: rgb(243, 243, 243);
+}
+
+.main{
+  padding: 0px 0 20px 0;
+}
+
+.padding{
+  padding-right: 360px;
+  padding-left: 360px;
+}
+
+.section{
+  margin-top: 25px;
+}
+.section h2{
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.shadowonhover:hover{
+  box-shadow: 0px 2px 4px rgb(190, 190, 190);
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* ----------------------------- Ads --------------------------*/
+.Ads{
+  background-color: rgb(94, 71, 226);
+  color: white;
+  padding: 0 360px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.adsimg{
+  width: 100%;
+  min-height: 80px;
+  background-color: #a47bb8;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+.adsimg div{
+  display: inline;
+}
+.adsimg button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ----------------------------- Header --------------------------*/
+
+.Header{
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.subheader{
+  width: 100%;
+  padding: 0 360px;
+  font-size: 12px;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.subheader a{
+  color: gray;
+  padding: 3px 19px;
+}
+#activeheader{
+  color: black;
+}
+#lastheader{
+  padding-right: 0;
+}
+.subheader a:hover,#activeheader:hover{
+  color: orangered;
+}
+.mainheader{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  padding: 10px 360px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainheader-item{
+  display: flex;
+  align-items: center;
+}
+.mainheader-item input{
+  background-color: rgb(233, 233, 233);
+  border: none;
+  width: 643px;
+  height: 45px;
+  padding: 13px 19px;
+}
+.mainheader-item input:active,.mainheader-item input:focus{
+  outline: none;
+}
+.mainheader-item button{
+  background-color: rgb(255, 123, 0);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+}
+.mainheader-item .cart{
+  margin-left: 24px;
+  font-size: 30px;
+}
+.logo{
+  width: 150px;
+}
+.gift{
+  text-align: end;
+}
+
+/* ----------------------------- Banner --------------------------*/
+.Banner{
+  width: 100%;
+  max-height: 340px;
+  background-color: #7e1616;
+  position: relative;
+}
+.sidenav{
+  width: 200px;
+  height: 100%;
+  background-color: white;
+  z-index: 5;
+  position: absolute;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.sidenav div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  cursor: pointer;
+  color: gray;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.sidenav div:hover{
+  color: rgb(255, 123, 0);
+  background-color: rgb(235, 235, 235);
+}
+.sidenav div:hover span::after{
+  content: ">";
+  color: rgb(255, 123, 0);
+  height: 100%;
+  font-size: 20px;
+  font-weight: 500;
+}
+.carousel{
+  height: 340px;
+}
+
+/* ----------------------------- Menu --------------------------*/
+.Menu{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.menuitem{
+  font-size: 19px;
+  background-color: white;
+  width: 19%;
+  padding: 4px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+.menuitem img{
+  border-radius: 20px;
+  border: 2px solid rgb(247, 247, 247);
+  /* padding: 5px; */
+  margin-right: 10px;
+}
+
+/* ----------------------------- FlashSale --------------------------*/
+.onsale{
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  padding-left: 20px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: orangered;
+}
+.time{
+  margin-left: 65px;
+  color: black;
+  margin-right: 5px;
+}
+.Timer{
+  font-size: 16px;
+  color: black;
+}
+.Timer span{
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  padding: 8px 12px;
+  background-color: rgb(204, 31, 0);
+  border-radius: 2px;
+  margin-left: 5px;
+}
+.shopall-border{
+  border: 1px solid orangered;
+  border-radius: 2px;
+  padding: 6px 15px;
+}
+.Flash-grid{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ----------------------------- Collections --------------------------*/
+.collection-grid-bg{
+  background-color: #c4c4c4;
+}
+.collection-grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1px;
+}
+.collections-card{
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.collections-card p{
+  color: gray;
+  font-size: 12px;
+}
+.collections-card-img{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* ----------------------------- LazMall --------------------------*/
+.lazmall-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.lazmall-card{
+  height: 270px;
+  background-color: white;
+  width: 188px;
+  text-align: center;
+}
+.lazmall-img-bg{
+  max-width: 100%;
+  height: 180px;
+  object-fit:fill;
+  /* position: static; */
+}
+.lazmall-img-bg img{
+  width: 100%;
+  height: 100%;
+}
+.gradient-box{
+  opacity: .25;
+  position: relative;
+  bottom: 36px;
+  height: 36px;
+  background-image: linear-gradient(white, gray);
+}
+.lazmall-display{
+  position: relative;
+  top: -22px;
+}
+.lazmall-card-img{
+  border: 3px solid white;
+}
+.lazmall-display span{
+  color: gray;
+  font-size: 12px;
+}
+#lazmall-card-title{
+  color: black;
+  font-size: 16px;
+}
+
+/* ----------------------------- Categories --------------------------*/
+.categories-grid{
+  display: grid;
+  gap: 1px;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+.categories-item{
+  min-height: 147.5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 16px 5px 0px 5px;
+}
+.categories-item img{
+  margin-bottom: 5px;
+}
+.categories-item span{
+  line-height: 20px;
+}
+
+/* ----------------------------- JustForYou --------------------------*/
+.JustForYou{
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+.foryou-grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+.foryou-card{
+  width: 189px;
+  background-color: white;
+  margin-bottom: 25px;
+}
+.foryou-description{
+  height: 136px;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.foryou-description span{
+  color: gray;
+  font-size: 13px;
+}
+.name{
+  max-height: 37px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.price{
+  color: orangered;
+  font-size: 18px;
+  /* margin-top: 5px; */
+}
+.originalprice{
+  text-decoration: line-through;
+}
+.rating{
+  display: inline;
+}
+.rating span{
+  color: darkgray;
+}
+.loadmore{
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* ----------------------------- Promotion --------------------------*/
+.promote-banner{
+  display: flex;
+  justify-content: space-between;
+
+}
+.promote-item{
+  cursor: pointer;
+  width: 388px;
+  height: 97px;
+  background-color: rgb(40, 115, 255);
+}
+.service{
+  margin: 50px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.service div{
+  width: 297px;
+}
+.service div span{
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.service div a{
+  color: black;
+  display: block;
+  font-size: 12px;
+}
+.service div a:hover{
+  text-decoration: underline;
+}
+.lazapp{
+  max-width: 297px;
+  display: flex;
+}
+.title{
+  padding-left: 15px;
+  line-height: 18px;
+  font-size: 16px;
+  color: orangered;
+}
+.text{
+  padding-left: 15px;
+  font-size: 14px;
+}
+#download{
+  height: 95px;
+  padding-right: 60px;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+#download div{
+  text-align: center;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  width: 128px;
+  height: 42px;
+}
+
+
+/* ----------------------------- Payment --------------------------*/
+.Payment{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: white;
+  display: flex;
+}
+.Payment p{
+  font-size: 16px;
+}
+.method{
+  width: 50%;
+}
+.method span{
+  margin-right: 30px;
+}
+.delivery{
+  display: flex;
+}
+.express{
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto auto;
+}
+.express span{
+  width: 96px;
+  height: 70px;
+  background-color: wheat;
+}
+.verify{
+  margin-left: 10px;
+}
+.verify-flex{
+  display: flex;
+}
+.verify-flex div{
+  margin-right: 20px;
+  width: 92px;
+  height: 60px;
+  background-color: wheat;
+}
+
+/* ----------------------------- Magazine --------------------------*/
+.Magazine{
+  padding-top: 60px;
+  width: 100%;
+  height: 770px;
+  display: flex;
+  justify-content: space-between;
+}
+.Magazine h1{
+  font-size: 16px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.width50{
+  width: 50%;
+}
+.paragraph{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.paragraph>* {
+  padding-right: 75px;
+}
+.paragraph span{
+  font-size: 12px;
+  margin: 6px 0 12px;
+  color: gray;
+  line-height: 14px;
+}
+.brands{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.brands>* {
+  padding-right: 75px;
+}
+.brands span{
+  margin-top: 12px;
+  font-size: 11px;
+}
+.brands a{
+  font-size: 11px;
+  color: gray;
+}
+.brands a:hover{
+  text-decoration: underline;
+}
+
+/* ----------------------------- Footer --------------------------*/
+
+.Footer {
+  display: flex;
+  font-size: 17px;
+  padding: 2.5rem 360px;
+  border-top: 1px solid #eaeaea;
+  background-color: white;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.Footer p{
+  font-size: 14px;
+}
+.Footer div:last-child{
+  justify-self: end;
+}
+.flexbox{
+  margin-top: 5px;
+  display: flex;
+}
+.border{
+  cursor: pointer;
+  margin-right: 5px;
+  border: 2px solid rgb(148, 148, 148);
+  border-radius: 20px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer img{
+  background-color: #616b6b;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  margin: 2px;
+}
+.countries{
+  width: 50%;
+}
+.follow{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
